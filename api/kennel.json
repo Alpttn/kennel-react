@@ -1,0 +1,22 @@
+{
+    "animals": [
+        { "id": 1, "name": "Doodles", "breed": "Poodle"},
+        { "id": 2, "name": "Decker", "breed": "German Sheperd"},
+        { "id": 3, "name": "Esme", "breed": "Pitbull"}
+    ],
+    "employees": [
+        { "id": 1, "name": "Archie", "title": "Manager"},
+        { "id": 2, "name": "Betty", "title": "CEO"},
+        { "id": 3, "name": "Veronica", "title": "CTO"}
+    ],
+    "owners": [
+        { "id": 1, "name": "Jughead", "phoneNumber": "888-909-8181"},
+        { "id": 2, "name": "pops", "phoneNumber": "999-909-8181"},
+        { "id": 3, "name": "Cheryl", "phoneNumber": "555-909-8181"}
+    ],
+    "locations": [
+        { "id": 1, "Building Site": "East Nashville", "notes": "Parking in rear"},
+        { "id": 2, "Building Site": "West End", "notes": "No parking on Street" },
+        { "id": 3, "Building Site": "12 South", "notes": "Parking tag required" }
+    ]
+}
