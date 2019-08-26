@@ -25,7 +25,9 @@ import React, { Component } from 'react'
 
         return(
             <div className="container-cards">
-                {this.state.owners.map(owners => <OwnerCard />)}
+                {this.state.owners.map(owner => 
+                <OwnerCard key={owner.id} owner={owner} />
+                )}
             </div>
         )
     }

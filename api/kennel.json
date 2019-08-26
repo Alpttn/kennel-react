@@ -10,13 +10,13 @@
         { "id": 3, "name": "Veronica", "title": "CTO"}
     ],
     "owners": [
-        { "id": 1, "name": "Jughead", "phoneNumber": "888-909-8181"},
-        { "id": 2, "name": "pops", "phoneNumber": "999-909-8181"},
-        { "id": 3, "name": "Cheryl", "phoneNumber": "555-909-8181"}
+        { "id": 1, "name": "Jughead", "phoneNumber": "888-909-8181", "Id": "203"},
+        { "id": 2, "name": "pops", "phoneNumber": "999-909-8181", "Id": "555"},
+        { "id": 3, "name": "Cheryl", "phoneNumber": "555-909-8181", "Id": "222" }
     ],
     "locations": [
-        { "id": 1, "Building Site": "East Nashville", "notes": "Parking in rear"},
-        { "id": 2, "Building Site": "West End", "notes": "No parking on Street" },
-        { "id": 3, "Building Site": "12 South", "notes": "Parking tag required" }
+        { "id": 1, "buildingSite": "East Nashville", "notes": "Parking in rear"},
+        { "id": 2, "buildingSite": "West End", "notes": "No parking on Street" },
+        { "id": 3, "buildingSite": "12 South", "notes": "Parking tag required" }
     ]
 }

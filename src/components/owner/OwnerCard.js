@@ -5,9 +5,9 @@ class OwnerCard extends Component {
     return (
       <div className="card">
         <div className="card-content">
-          <h3>Owner Name: <span className="card-petname">Cersi</span></h3>
-          <p>Owner Id: Hound</p>
-          <p>Phone Number: Hound</p>
+          <h3>Owner Name: <span className="card-petname">{this.props.owner.name}</span></h3>
+          <p>{this.props.owner.Id}</p>
+          <p>{this.props.owner.phoneNumber}</p>
         </div>
       </div>
     );
