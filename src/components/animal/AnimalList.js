@@ -36,6 +36,14 @@ class AnimalList extends Component {
         console.log("AnimalList: Render");
 
         return (
+            <React.Fragment>
+            <section className="section-content">
+                <button type="button"
+                    className="btn"
+                    onClick={() => { this.props.history.push("/animals/new") }}>
+                    Admit Animal
+                </button>
+            </section>
             <div className="container-cards">
                 {this.state.animals.map(animal =>
                     <AnimalCard
@@ -45,6 +53,7 @@ class AnimalList extends Component {
                     />
                 )}
             </div>
+            </React.Fragment>
         )
     }
 }
