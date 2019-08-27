@@ -29,7 +29,7 @@ class ApplicationViews extends Component {
         }} />
         <Route path="/locations/:locationId(\d+)" render={(props) => {
           // Pass the animalId to the AnimalDetailComponent
-          return <LocationDetail locationId={parseInt(props.match.params.locationId)} />
+          return <LocationDetail locationId={parseInt(props.match.params.locationId)} {...props} />
         }} />
         <Route path="/employees" render={(props) => {
           return <EmployeeList />

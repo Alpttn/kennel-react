@@ -7,6 +7,7 @@ class LocationDetail extends Component {
   state = {
       buildingSite: "",
       notes: "",
+      loadingStatus: true,
   }
 
   componentDidMount(){
@@ -16,17 +17,26 @@ class LocationDetail extends Component {
     .then((location) => {
       this.setState({
         buildingSite: location.buildingSite,
-        notes: location.notes
+        notes: location.notes,
+        loadingStatus: false
       });
     });
   }
+
+  handleDelete = () => {
+    //invoke the delete function in AnimalManger and re-direct to the animal list.
+    this.setState({loadingStatus: true})
+    LocationManager.delete(this.props.locationId)
+    .then(() => this.props.history.push("/locations"))
+}
 
   render() {
     return (
       <div className="card">
         <div className="card-content">
           <h3>Building site: {this.state.buildingSite}</h3>
-          <p>{this.state.notes}</p>
+          <p>Notes: {this.state.notes}</p>
+          <button type="button" disabled={this.state.loadingStatus} onClick={this.handleDelete}>Discharge</button>
         </div>
       </div>
     );
