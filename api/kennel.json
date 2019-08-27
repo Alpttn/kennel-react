@@ -31,6 +31,11 @@
       "id": 2,
       "name": "Betty",
       "title": "CEO"
+    },
+    {
+      "name": "Veronica",
+      "title": "CEO",
+      "id": 3
     }
   ],
   "owners": [
