@@ -9,6 +9,7 @@ import AnimalDetail from './animal/AnimalDetail'
 import LocationDetail from './location/LocationDetail'
 import AnimalForm from './animal/AnimalForm'
 import EmployeeForm from './employee/EmployeeForm'
+import OwnerForm from './owner/OwnerForm'
 
 
 
@@ -43,8 +44,11 @@ class ApplicationViews extends Component {
         <Route path="/employees/new" render={(props) => {
           return <EmployeeForm {...props} />
         }} />
-        <Route path="/owners" render={(props) => {
-          return <OwnerList />
+        <Route exact path="/owners" render={(props) => {
+          return <OwnerList {...props} />
+        }} />
+        <Route path="/owners/new" render={(props) => {
+          return <OwnerForm {...props} />
         }} />
       </React.Fragment>
     )
