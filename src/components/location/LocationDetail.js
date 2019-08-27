@@ -36,7 +36,7 @@ class LocationDetail extends Component {
         <div className="card-content">
           <h3>Building site: {this.state.buildingSite}</h3>
           <p>Notes: {this.state.notes}</p>
-          <button type="button" disabled={this.state.loadingStatus} onClick={this.handleDelete}>Discharge</button>
+          <button type="button" disabled={this.state.loadingStatus} onClick={this.handleDelete}>Close Location</button>
         </div>
       </div>
     );
