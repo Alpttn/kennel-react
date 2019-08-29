@@ -30,7 +30,7 @@
     {
       "id": 2,
       "name": "Betty",
-      "title": "CEO"
+      "title": "CTO"
     },
     {
       "name": "Veronica",
@@ -58,10 +58,10 @@
       "Id": "222"
     },
     {
-      "name": "Oprah",
+      "id": 4,
+      "name": "Oprah!!!!!!!",
       "phoneNumber": "555-222-000",
-      "Id": "299",
-      "id": 4
+      "Id": "299"
     }
   ],
   "locations": [
